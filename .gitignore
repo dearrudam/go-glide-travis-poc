@@ -16,7 +16,7 @@
 .glide/
 
 glide.lock
-
+coverage.txt
 vendor/
 ### NetBeans template
 nbproject/private/
