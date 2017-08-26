@@ -7,9 +7,9 @@ go:
 before_install:
   - sudo apt-get install curl -qq
   - curl https://glide.sh/get | sh
-  - glide up
 
 script:
+  - glide up
   - go test -race -coverprofile=coverage.txt -covermode=atomic
 
 after_success:
