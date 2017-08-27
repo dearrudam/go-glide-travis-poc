@@ -53,14 +53,14 @@ func FeatureContext(s *godog.Suite) {
 	s.Step(`^the result should be (\d+)$`, theResultShouldBe)
 }
 
-//func TestSum(t *testing.T) {
-//
-//	t.Log("testing calculator.Sum...")
-//
-//	sum := Sum(1, 1)
-//
-//	if sum != 2 {
-//		t.Fatalf("failed calculation. The expected result should be %v , but it was %v", 2, sum)
-//	}
-//
-//}
+func TestSum(t *testing.T) {
+
+	t.Log("testing calculator.Sum...")
+
+	sum := Sum(1, 1)
+
+	if sum != 2 {
+		t.Fatalf("failed calculation. The expected result should be %v , but it was %v", 2, sum)
+	}
+
+}
