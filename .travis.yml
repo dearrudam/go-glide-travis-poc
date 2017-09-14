@@ -10,6 +10,10 @@ script:
   - glide up
   - go test -race -coverprofile=calculator-coverage.txt -covermode=atomic -v ./calculator
   - go test -race -coverprofile=xmlbuilder-coverage.txt -covermode=atomic -v ./xmlbuilder
+  - cat calculator-coverage.txt > coverage.txt
+  - cat xmlbuilder-coverage.txt >> coverage.txt
+  - rm calculator-coverage.txt xmlbuilder-coverage.txt
+
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
