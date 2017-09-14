@@ -10,7 +10,7 @@ import (
 
 
 func TestMain(m *testing.M) {
-	format := "progress"
+	format := "pretty"
 	for _, arg := range os.Args[1:] {
 		if arg == "-test.v=true" { // go test transforms -v option
 			format = "pretty"

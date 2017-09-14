@@ -8,7 +8,8 @@ before_install:
 
 script:
   - glide up
-  - go test -race -coverprofile=coverage.txt -covermode=atomic -v ./...
+  - go test -race -coverprofile=coverage.txt -covermode=atomic -v ./calculator
+  - go test -race -coverprofile=coverage.txt -covermode=atomic -v ./xmlbuilder
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)

@@ -2,3 +2,4 @@ package: github.com/dearrudam/go-glide-travis-poc
 import: []
 testImport:
 - package: github.com/DATA-DOG/godog
+- package: github.com/ChrisTrenkamp/goxpath
